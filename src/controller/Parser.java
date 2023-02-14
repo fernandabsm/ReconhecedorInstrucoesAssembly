@@ -24,7 +24,7 @@ public class Parser {
         String line = buffRead.readLine();
 
         String idRegex = "[a-zA-Z][a-zA-Z0-9]*";
-        String opRegex = "[+\\-*/<!.,=&&]";
+        String opRegex = "[+\\-*/<!.,=]|\\&\\&";
         String delimRegex = "[(){}\\[\\];]";
         String declRegex = "class|extends|public|static|void|main|length|this|new";
         String fluxoRegex = "if|else|while|return|System\\.out\\.println";
